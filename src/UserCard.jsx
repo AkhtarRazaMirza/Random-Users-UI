@@ -12,14 +12,14 @@ function UserCard({ user }) {
   return (
     <div className='group relative h-full'>
       {/* Card Background */}
-      <div className='absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl transform group-hover:scale-105 transition-transform duration-300 shadow-2xl'></div>
+      <div className='absolute inset-0 bg-linear-to-br from-gray-800 to-gray-900 rounded-2xl transform group-hover:scale-105 transition-transform duration-300 shadow-2xl'></div>
       
       {/* Main Content */}
       <div className='relative p-6 h-full flex flex-col rounded-2xl border border-gray-700 group-hover:border-purple-500 transition-colors duration-300'>
         
         {/* Header Section with Image */}
         <div className='flex flex-col items-center -mt-16 mb-4'>
-          <div className={`w-28 h-28 rounded-full bg-gradient-to-br ${genderColor} p-1 shadow-lg`}>
+          <div className={`w-28 h-28 rounded-full bg-linear-to-br ${genderColor} p-1 shadow-lg`}>
             <img 
               src={picture.large} 
               alt={`${name.first} ${name.last}`}
@@ -35,7 +35,7 @@ function UserCard({ user }) {
         
         {/* Gender Badge */}
         <div className='flex justify-center mb-4'>
-          <span className={`px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r ${genderColor} text-white capitalize`}>
+          <span className={`px-3 py-1 text-xs font-semibold rounded-full bg-linear-to-r ${genderColor} text-white capitalize`}>
             {gender}
           </span>
         </div>
@@ -46,10 +46,10 @@ function UserCard({ user }) {
         </p>
 
         {/* Divider */}
-        <div className='w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full mx-auto mb-4'></div>
+        <div className='w-12 h-1 bg-linear-to-r from-blue-400 to-purple-600 rounded-full mx-auto mb-4'></div>
 
         {/* Contact Information */}
-        <div className='space-y-3 flex-grow'>
+        <div className='space-y-3 grow'>
           
           {/* Email */}
           <div className='flex items-start space-x-3'>
