@@ -92,7 +92,7 @@ function UserCard({ user }) {
         </div>
 
         {/* Footer Button */}
-        <button className='mt-6 w-full py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 active:scale-95'>
+        <button className='mt-6 w-full py-2 bg-linear-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 active:scale-95'>
           View Profile
         </button>
       </div>
